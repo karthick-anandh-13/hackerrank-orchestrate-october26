@@ -1,0 +1,1086 @@
+{
+  "summary": {
+    "missing_expected_step_entries": 35,
+    "cases_affected": 23,
+    "system_counts": {
+      "account_service": 21,
+      "analytics_platform": 7,
+      "security_service": 7
+    },
+    "resource_counts": {
+      "account_001": 1,
+      "account_002": 1,
+      "analytics_9406": 1,
+      "account_004": 1,
+      "analytics_901": 1,
+      "account_006": 1,
+      "account_007": 1,
+      "account_008": 1,
+      "account_3960": 1,
+      "audit_record_4902": 1,
+      "account_010": 1,
+      "account_5521": 1,
+      "audit_record_6645": 1,
+      "account_5037": 1,
+      "audit_record_5569": 1,
+      "account_6440": 1,
+      "analytics_5335": 1,
+      "account_4990": 1,
+      "account_410": 1,
+      "audit_record_4128": 1,
+      "audit_record_7095": 1,
+      "account_3136": 1,
+      "analytics_1895": 1,
+      "account_5684": 1,
+      "analytics_4566": 1,
+      "account_3866": 1,
+      "analytics_4574": 1,
+      "account_5482": 1,
+      "analytics_6077": 1,
+      "account_7012": 1,
+      "audit_record_3954": 1,
+      "account_4163": 1,
+      "audit_record_1707": 1,
+      "account_4857": 1,
+      "account_8858": 1
+    }
+  },
+  "missing_steps": [
+    {
+      "case_id": "case_01",
+      "resolved_user_id": "user_01",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_001",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "evidence_54",
+      "expected_cited_file_path": "evidence/databases/customer_accounts_failover_replica_20260902.sql",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3342",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-08-20T16:41:43Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_02",
+      "resolved_user_id": "user_02",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_002",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "evidence_54",
+      "expected_cited_file_path": "evidence/databases/customer_accounts_failover_replica_20260902.sql",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3376",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-08-22T07:30:03Z",
+          "reported_result": "PARTIAL",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_03",
+      "resolved_user_id": "user_43",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "analytics_platform",
+      "expected_resource_id": "analytics_9406",
+      "expected_operation": "VERIFY_RECORD_ANONYMIZED",
+      "expected_state": "ANONYMIZED",
+      "expected_evidence_id": "evidence_94",
+      "expected_cited_file_path": "evidence/logs/resource_lookup_trace_20260926_103856.log",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_94",
+          "system_id": "analytics_platform",
+          "data_category": null,
+          "captured_at": "2026-09-26T10:38:56Z",
+          "observed_at": "2026-09-26T10:38:56Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_readback_logs"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3852",
+          "system_id": "analytics_platform",
+          "event_type": "ANONYMIZE_RECORD",
+          "event_time": "2026-09-15T10:31:16Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_04",
+      "resolved_user_id": "user_04",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_004",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "evidence_54",
+      "expected_cited_file_path": "evidence/databases/customer_accounts_failover_replica_20260902.sql",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [],
+      "diagnosis": "no resource occurrence in participant evidence or activity"
+    },
+    {
+      "case_id": "case_04",
+      "resolved_user_id": "user_04",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "analytics_platform",
+      "expected_resource_id": "analytics_901",
+      "expected_operation": "VERIFY_RECORD_ANONYMIZED",
+      "expected_state": "ANONYMIZED",
+      "expected_evidence_id": "evidence_56",
+      "expected_cited_file_path": "evidence/records/customer_analytics_report_20260907.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_56",
+          "system_id": "analytics_platform",
+          "data_category": null,
+          "captured_at": "2026-09-07T09:45:00Z",
+          "observed_at": "2026-09-07T09:45:00Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "analytics_platform"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3463",
+          "system_id": "analytics_platform",
+          "event_type": "ANONYMIZE_RECORD",
+          "event_time": "2026-08-27T08:47:41Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_06",
+      "resolved_user_id": "user_06",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_006",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3545",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-08-30T17:08:20Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_07",
+      "resolved_user_id": "user_07",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_007",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3590",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-01T19:28:39Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_08",
+      "resolved_user_id": "user_08",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_008",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3554",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-08-31T13:48:58Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_09",
+      "resolved_user_id": "user_61",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_3960",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_06",
+          "system_id": "account_service",
+          "data_category": "USER_PROFILE",
+          "captured_at": "2026-09-18T11:55:24Z",
+          "observed_at": "2026-09-18T11:55:24Z",
+          "linked_to_subject_by_identifiers": true,
+          "available_by_audit_at": false,
+          "resource_location": "central_observability_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3703",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-07T07:55:18Z",
+          "reported_result": "FAILED",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_09",
+      "resolved_user_id": "user_61",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "security_service",
+      "expected_resource_id": "audit_record_4902",
+      "expected_operation": "VERIFY_RECORD_PRESENT",
+      "expected_state": "PRESENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_06",
+          "system_id": "security_service",
+          "data_category": "SECURITY_AUDIT_LOG",
+          "captured_at": "2026-09-18T11:55:24Z",
+          "observed_at": "2026-09-18T11:55:24Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": false,
+          "resource_location": "central_observability_export"
+        }
+      ],
+      "activity_rows_for_resource": [],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_10",
+      "resolved_user_id": "user_10",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_010",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3595",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-02T10:08:37Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_18",
+      "resolved_user_id": "user_50",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_5521",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3732",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-09T09:52:26Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_18",
+      "resolved_user_id": "user_50",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "security_service",
+      "expected_resource_id": "audit_record_6645",
+      "expected_operation": "VERIFY_RECORD_PRESENT",
+      "expected_state": "PRESENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [],
+      "diagnosis": "no resource occurrence in participant evidence or activity"
+    },
+    {
+      "case_id": "case_20",
+      "resolved_user_id": "user_48",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_5037",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3734",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-09T10:14:55Z",
+          "reported_result": "FAILED",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_20",
+      "resolved_user_id": "user_48",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "security_service",
+      "expected_resource_id": "audit_record_5569",
+      "expected_operation": "VERIFY_RECORD_PRESENT",
+      "expected_state": "PRESENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [],
+      "diagnosis": "no resource occurrence in participant evidence or activity"
+    },
+    {
+      "case_id": "case_21",
+      "resolved_user_id": "user_21",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_6440",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "evidence_92",
+      "expected_cited_file_path": "evidence/records/service_resource_export_20260915_114455.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_92",
+          "system_id": "account_service",
+          "data_category": null,
+          "captured_at": "2026-09-15T11:44:55Z",
+          "observed_at": "2026-09-15T11:44:55Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_resource_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3661",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-05T11:01:53Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_21",
+      "resolved_user_id": "user_21",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "analytics_platform",
+      "expected_resource_id": "analytics_5335",
+      "expected_operation": "VERIFY_RECORD_ANONYMIZED",
+      "expected_state": "ANONYMIZED",
+      "expected_evidence_id": "evidence_92",
+      "expected_cited_file_path": "evidence/records/service_resource_export_20260915_114455.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "analytics_platform",
+          "data_category": "ANALYTICS_PROFILE",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        },
+        {
+          "file_id": "evidence_92",
+          "system_id": "analytics_platform",
+          "data_category": null,
+          "captured_at": "2026-09-15T11:44:55Z",
+          "observed_at": "2026-09-15T11:44:55Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_resource_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3665",
+          "system_id": "analytics_platform",
+          "event_type": "ANONYMIZE_RECORD",
+          "event_time": "2026-09-05T11:31:34Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_22",
+      "resolved_user_id": "user_51",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_4990",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3573",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-01T09:12:11Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_23",
+      "resolved_user_id": "user_23",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_410",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3662",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-05T11:10:55Z",
+          "reported_result": "FAILED",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_23",
+      "resolved_user_id": "user_23",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "security_service",
+      "expected_resource_id": "audit_record_4128",
+      "expected_operation": "VERIFY_RECORD_PRESENT",
+      "expected_state": "PRESENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "security_service",
+          "data_category": "SECURITY_AUDIT_LOG",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": true,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        }
+      ],
+      "activity_rows_for_resource": [],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_24",
+      "resolved_user_id": "user_24",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "security_service",
+      "expected_resource_id": "audit_record_7095",
+      "expected_operation": "VERIFY_RECORD_PRESENT",
+      "expected_state": "PRESENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "security_service",
+          "data_category": "SECURITY_AUDIT_LOG",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": true,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        }
+      ],
+      "activity_rows_for_resource": [],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_25",
+      "resolved_user_id": "user_25",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_3136",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "evidence_92",
+      "expected_cited_file_path": "evidence/records/service_resource_export_20260915_114455.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_92",
+          "system_id": "account_service",
+          "data_category": null,
+          "captured_at": "2026-09-15T11:44:55Z",
+          "observed_at": "2026-09-15T11:44:55Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_resource_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3597",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-02T10:48:27Z",
+          "reported_result": "FAILED",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_25",
+      "resolved_user_id": "user_25",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "analytics_platform",
+      "expected_resource_id": "analytics_1895",
+      "expected_operation": "VERIFY_RECORD_ANONYMIZED",
+      "expected_state": "ANONYMIZED",
+      "expected_evidence_id": "evidence_92",
+      "expected_cited_file_path": "evidence/records/service_resource_export_20260915_114455.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "analytics_platform",
+          "data_category": "ANALYTICS_PROFILE",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        },
+        {
+          "file_id": "evidence_92",
+          "system_id": "analytics_platform",
+          "data_category": null,
+          "captured_at": "2026-09-15T11:44:55Z",
+          "observed_at": "2026-09-15T11:44:55Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_resource_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3602",
+          "system_id": "analytics_platform",
+          "event_type": "ANONYMIZE_RECORD",
+          "event_time": "2026-09-02T11:31:08Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_26",
+      "resolved_user_id": "user_26",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_5684",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "evidence_92",
+      "expected_cited_file_path": "evidence/records/service_resource_export_20260915_114455.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "account_service",
+          "data_category": "USER_PROFILE",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": true,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        },
+        {
+          "file_id": "evidence_92",
+          "system_id": "account_service",
+          "data_category": null,
+          "captured_at": "2026-09-15T11:44:55Z",
+          "observed_at": "2026-09-15T11:44:55Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_resource_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3600",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-02T11:08:43Z",
+          "reported_result": "FAILED",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_26",
+      "resolved_user_id": "user_26",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "analytics_platform",
+      "expected_resource_id": "analytics_4566",
+      "expected_operation": "VERIFY_RECORD_ANONYMIZED",
+      "expected_state": "ANONYMIZED",
+      "expected_evidence_id": "evidence_92",
+      "expected_cited_file_path": "evidence/records/service_resource_export_20260915_114455.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "analytics_platform",
+          "data_category": "ANALYTICS_PROFILE",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        },
+        {
+          "file_id": "evidence_92",
+          "system_id": "analytics_platform",
+          "data_category": null,
+          "captured_at": "2026-09-15T11:44:55Z",
+          "observed_at": "2026-09-15T11:44:55Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_resource_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3603",
+          "system_id": "analytics_platform",
+          "event_type": "ANONYMIZE_RECORD",
+          "event_time": "2026-09-02T11:31:24Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_27",
+      "resolved_user_id": "user_27",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_3866",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "evidence_92",
+      "expected_cited_file_path": "evidence/records/service_resource_export_20260915_114455.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "account_service",
+          "data_category": "USER_PROFILE",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": true,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        },
+        {
+          "file_id": "evidence_92",
+          "system_id": "account_service",
+          "data_category": null,
+          "captured_at": "2026-09-15T11:44:55Z",
+          "observed_at": "2026-09-15T11:44:55Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_resource_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3530",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-08-30T10:57:28Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_27",
+      "resolved_user_id": "user_27",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "analytics_platform",
+      "expected_resource_id": "analytics_4574",
+      "expected_operation": "VERIFY_RECORD_ANONYMIZED",
+      "expected_state": "ANONYMIZED",
+      "expected_evidence_id": "evidence_92",
+      "expected_cited_file_path": "evidence/records/service_resource_export_20260915_114455.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "analytics_platform",
+          "data_category": "ANALYTICS_PROFILE",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        },
+        {
+          "file_id": "evidence_92",
+          "system_id": "analytics_platform",
+          "data_category": null,
+          "captured_at": "2026-09-15T11:44:55Z",
+          "observed_at": "2026-09-15T11:44:55Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_resource_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3533",
+          "system_id": "analytics_platform",
+          "event_type": "ANONYMIZE_RECORD",
+          "event_time": "2026-08-30T11:31:09Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_28",
+      "resolved_user_id": "user_28",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_5482",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "evidence_92",
+      "expected_cited_file_path": "evidence/records/service_resource_export_20260915_114455.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_92",
+          "system_id": "account_service",
+          "data_category": null,
+          "captured_at": "2026-09-15T11:44:55Z",
+          "observed_at": "2026-09-15T11:44:55Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_resource_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3529",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-08-30T10:46:13Z",
+          "reported_result": "FAILED",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_28",
+      "resolved_user_id": "user_28",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "analytics_platform",
+      "expected_resource_id": "analytics_6077",
+      "expected_operation": "VERIFY_RECORD_ANONYMIZED",
+      "expected_state": "ANONYMIZED",
+      "expected_evidence_id": "evidence_92",
+      "expected_cited_file_path": "evidence/records/service_resource_export_20260915_114455.json",
+      "expected_cited_file_contains_resource_id": true,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "analytics_platform",
+          "data_category": "ANALYTICS_PROFILE",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        },
+        {
+          "file_id": "evidence_92",
+          "system_id": "analytics_platform",
+          "data_category": null,
+          "captured_at": "2026-09-15T11:44:55Z",
+          "observed_at": "2026-09-15T11:44:55Z",
+          "linked_to_subject_by_identifiers": false,
+          "available_by_audit_at": true,
+          "resource_location": "service_resource_export"
+        }
+      ],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3534",
+          "system_id": "analytics_platform",
+          "event_type": "ANONYMIZE_RECORD",
+          "event_time": "2026-08-30T11:31:53Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_29",
+      "resolved_user_id": "user_29",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_7012",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3532",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-08-30T11:06:57Z",
+          "reported_result": "FAILED",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_29",
+      "resolved_user_id": "user_29",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "security_service",
+      "expected_resource_id": "audit_record_3954",
+      "expected_operation": "VERIFY_RECORD_PRESENT",
+      "expected_state": "PRESENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "security_service",
+          "data_category": "SECURITY_AUDIT_LOG",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": true,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        }
+      ],
+      "activity_rows_for_resource": [],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_30",
+      "resolved_user_id": "user_30",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_4163",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3465",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-08-27T10:55:42Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_30",
+      "resolved_user_id": "user_30",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "security_service",
+      "expected_resource_id": "audit_record_1707",
+      "expected_operation": "VERIFY_RECORD_PRESENT",
+      "expected_state": "PRESENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [
+        {
+          "file_id": "evidence_02",
+          "system_id": "security_service",
+          "data_category": "SECURITY_AUDIT_LOG",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "linked_to_subject_by_identifiers": true,
+          "available_by_audit_at": false,
+          "resource_location": "records_assurance_snapshot_bundle"
+        }
+      ],
+      "activity_rows_for_resource": [],
+      "diagnosis": "present_but_future_or_unlinked"
+    },
+    {
+      "case_id": "case_31",
+      "resolved_user_id": "user_541",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_4857",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "evidence_51",
+      "expected_cited_file_path": "evidence/records/customer_data_snapshot_bundle_20260915.json",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3682",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-06T10:45:58Z",
+          "reported_result": "SUCCESS",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    },
+    {
+      "case_id": "case_32",
+      "resolved_user_id": "user_542",
+      "expected_phase": "VERIFICATION",
+      "expected_system_id": "account_service",
+      "expected_resource_id": "account_8858",
+      "expected_operation": "VERIFY_RECORD_ABSENT",
+      "expected_state": "ABSENT",
+      "expected_evidence_id": "",
+      "expected_cited_file_path": "",
+      "expected_cited_file_contains_resource_id": false,
+      "evidence_items_for_resource": [],
+      "activity_rows_for_resource": [
+        {
+          "activity_id": "activity_3685",
+          "system_id": "account_service",
+          "event_type": "DELETE_RECORD",
+          "event_time": "2026-09-06T11:05:15Z",
+          "reported_result": "PARTIAL",
+          "details_identifies_subject": false
+        }
+      ],
+      "diagnosis": "no_item_level_evidence; activity claims cannot prove current state"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "captured_at_utc": "2026-10-24T20:37:17.304454+00:00",
+  "git_head": "acb3dfca6e94e4803a26e72c49074a488de93c93",
+  "git_branch": "main",
+  "request_rows": 518,
+  "output_rows": 518,
+  "output_headers": [
+    "case_id",
+    "deletion_status",
+    "steps_json"
+  ],
+  "status_distribution": {
+    "INCOMPLETE": 351,
+    "COMPLETE": 157,
+    "NOT_APPLICABLE": 10
+  },
+  "output_sha256": "93e23263f5f52274508da0e936ea4bff213962eea19912bae6c10018e731f46a",
+  "public_sample_evaluator_command": "python3 -m code.evaluation.main",
+  "generation_command": "python3 -m code.main",
+  "test_command": "python3 -m unittest discover -s tests -v",
+  "validation_command": "python3 -m code.validate_output",
+  "output_preserved_at": "evaluation_artifacts/baseline_20261024T203717Z/output.csv",
+  "tests_passed": 29,
+  "tests_failed": 0,
+  "output_contract_validation": "passed",
+  "public_status_matches": 29,
+  "public_status_cases": 32,
+  "public_exact_step_sequence_matches": 8,
+  "public_exact_step_cases": 32,
+  "public_combined_matches": 8,
+  "public_combined_cases": 32,
+  "baseline_report": "evaluation_artifacts/public_32_case_mismatch_report.json"
+}

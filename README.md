@@ -23,7 +23,7 @@ cd hackerrank-orchestrate-october26
 
 Start your AI coding tool from the **repository root** so it automatically reads [`AGENTS.md`](./AGENTS.md) and logs your session turns to `log.txt` in the root directory.
 
-Build your solution in `code/main.py`, or use another language and document its setup and run command clearly in your README.
+The repository includes a deterministic Python implementation in `code/main.py`.
 
 Your solution must:
 
@@ -31,13 +31,36 @@ Your solution must:
 - Generate one prediction row for every request in `dataset/deletion_requests.csv`
 - Write the final predictions to `output.csv` in the repository root
 
-Run the starter Python entry point with:
+Python 3.9 or newer is required. The pipeline uses only the Python standard library. `pdftotext` and `tesseract` are optional local tools used to extract evidence from PDFs and screenshots; without them, other evidence formats still work.
+
+Run the full evaluation dataset with:
 
 ```bash
 python3 code/main.py
 ```
 
-The blank template at `dataset/output.csv` is provided as a reference. Your final generated file for submission must be the root-level `output.csv`.
+This writes the final predictions to the repository-root `output.csv`. To run a smaller request file or choose another output path, use:
+
+```bash
+python3 code/main.py --requests dataset/sample_deletion_requests.csv --output /tmp/sample_output.csv
+```
+
+Run the public sample comparison and additional policy regression cases with:
+
+```bash
+python3 -m code.evaluation.main
+```
+
+Run the independent output contract validator and create reason-coded obligation and resurrection-risk graph artifacts with:
+
+```bash
+python3 -m code.validate_output
+python3 -m code.diagnostics
+```
+
+The diagnostics command writes JSON artifacts under `evaluation_artifacts/`. These describe evidence coverage over discovered resources; they do not attest that the supplied inventory is exhaustive.
+
+The blank template at `dataset/output.csv` is provided as a reference; it is not the submission output path.
 
 
 ## Dataset
@@ -73,6 +96,8 @@ case_id,deletion_status,steps_json
 Produce exactly one row per request. `deletion_status` is `COMPLETE`, `INCOMPLETE`, or `NOT_APPLICABLE`. `steps_json` is an ordered JSON array containing findings, remediation actions, and verification checks. Use an empty array (`[]`) for `NOT_APPLICABLE`. Evidence references may be a `file_id`, `activity_id`, or `audit_id`. Determine the resource state at `audit_at` from the available evidence; reported workflow statuses and operation results are claims. Use `dataset/sample_output.csv` as the format reference.
 
 The final file must contain 518 data rows sorted by `case_id` (plus the header row). The grader parses `steps_json` as JSON, so object-key order and whitespace do not matter; array order does. Order findings, remediation, and verification in that phase order. Within a phase, follow the operation order in the problem statement, then sort by `system_id` and `resource_id`.
+
+An authorized request with no identity-linked records is kept `INCOMPLETE`. The pipeline does not treat missing evidence, a workflow status, or an unrelated nearby activity event as proof that deletion completed.
 
 ---
 

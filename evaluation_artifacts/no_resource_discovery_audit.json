@@ -1,0 +1,1001 @@
+{
+  "summary": {
+    "request_rows": 518,
+    "authorized_requests": 508,
+    "manifest_files_searched": 94,
+    "manifest_file_types": {
+      ".log": 26,
+      ".json": 28,
+      ".txt": 1,
+      ".png": 11,
+      ".sql": 24,
+      ".pdf": 4
+    },
+    "parsed_evidence_items": 2550,
+    "activity_rows_searched": 4011,
+    "authorized_cases_with_zero_discovered_resources": 25,
+    "cases_with_unresolved_identity": 0,
+    "case_ids": [
+      "case_33",
+      "case_35",
+      "case_39",
+      "case_50",
+      "case_52",
+      "case_53",
+      "case_55",
+      "case_61",
+      "case_63",
+      "case_263",
+      "case_264",
+      "case_265",
+      "case_266",
+      "case_267",
+      "case_268",
+      "case_269",
+      "case_270",
+      "case_271",
+      "case_272",
+      "case_368",
+      "case_416",
+      "case_417",
+      "case_517",
+      "case_519",
+      "case_521"
+    ],
+    "diagnosis_counts": {
+      "NO_LINKED_RESOURCE": 25,
+      "identity_matched_evidence_candidate": 8,
+      "activity_claims_without_item_proof": 1,
+      "no_identity_matched_evidence_candidate": 17,
+      "no_subject_linked_candidate_in_corpus": 16
+    }
+  },
+  "cases": [
+    {
+      "case_id": "case_33",
+      "resolved_user_id": "user_18",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [
+        {
+          "file_id": "evidence_01",
+          "resource_id": "search_2352",
+          "system_id": "search_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "account_2373",
+          "system_id": "account_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "export_1260",
+          "system_id": "export_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "audit_record_8486",
+          "system_id": "security_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        }
+      ],
+      "matched_activity_candidates": [
+        {
+          "activity_id": "activity_4004",
+          "resource_id": "export_1260",
+          "system_id": "export_service",
+          "event_time": "2026-06-18T12:07:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_claim_without_item_level_evidence"
+        },
+        {
+          "activity_id": "activity_4009",
+          "resource_id": "export_1842",
+          "system_id": "export_service",
+          "event_time": "2026-07-18T11:07:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_claim_without_item_level_evidence"
+        }
+      ],
+      "exclusion_reasons": {
+        "manifest_capture_after_audit_at": 4
+      }
+    },
+    {
+      "case_id": "case_35",
+      "resolved_user_id": "user_13",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [
+        {
+          "file_id": "evidence_01",
+          "resource_id": "audit_record_8925",
+          "system_id": "security_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "account_8491",
+          "system_id": "account_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "search_428",
+          "system_id": "search_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        }
+      ],
+      "matched_activity_candidates": [
+        {
+          "activity_id": "activity_4001",
+          "resource_id": "search_428",
+          "system_id": "search_service",
+          "event_time": "2026-09-01T06:07:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_claim_without_item_level_evidence"
+        }
+      ],
+      "exclusion_reasons": {
+        "manifest_capture_after_audit_at": 3
+      }
+    },
+    {
+      "case_id": "case_39",
+      "resolved_user_id": "user_14",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [
+        {
+          "file_id": "evidence_01",
+          "resource_id": "search_4801",
+          "system_id": "search_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "audit_record_7301",
+          "system_id": "security_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "data_flow_1121",
+          "system_id": "integration_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "account_8926",
+          "system_id": "account_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        }
+      ],
+      "matched_activity_candidates": [
+        {
+          "activity_id": "activity_4002",
+          "resource_id": "data_flow_1121",
+          "system_id": "integration_service",
+          "event_time": "2026-08-07T08:07:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_claim_without_item_level_evidence"
+        }
+      ],
+      "exclusion_reasons": {
+        "manifest_capture_after_audit_at": 4
+      }
+    },
+    {
+      "case_id": "case_50",
+      "resolved_user_id": "user_20",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 2,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [
+        {
+          "file_id": "evidence_01",
+          "resource_id": "search_4639",
+          "system_id": "search_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "analytics_7438",
+          "system_id": "analytics_platform",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "account_3270",
+          "system_id": "account_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "audit_record_5080",
+          "system_id": "security_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        }
+      ],
+      "matched_activity_candidates": [
+        {
+          "activity_id": "activity_4003",
+          "resource_id": "analytics_7438",
+          "system_id": "analytics_platform",
+          "event_time": "2026-07-13T10:07:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_claim_without_item_level_evidence"
+        }
+      ],
+      "exclusion_reasons": {
+        "manifest_capture_after_audit_at": 4
+      }
+    },
+    {
+      "case_id": "case_52",
+      "resolved_user_id": "user_18",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [
+        {
+          "file_id": "evidence_01",
+          "resource_id": "search_2352",
+          "system_id": "search_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "account_2373",
+          "system_id": "account_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "export_1260",
+          "system_id": "export_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "audit_record_8486",
+          "system_id": "security_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        }
+      ],
+      "matched_activity_candidates": [
+        {
+          "activity_id": "activity_4004",
+          "resource_id": "export_1260",
+          "system_id": "export_service",
+          "event_time": "2026-06-18T12:07:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_claim_without_item_level_evidence"
+        },
+        {
+          "activity_id": "activity_4009",
+          "resource_id": "export_1842",
+          "system_id": "export_service",
+          "event_time": "2026-07-18T11:07:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_after_audit_at"
+        }
+      ],
+      "exclusion_reasons": {
+        "manifest_capture_after_audit_at": 4
+      }
+    },
+    {
+      "case_id": "case_53",
+      "resolved_user_id": "user_22",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [
+        {
+          "file_id": "evidence_02",
+          "resource_id": "audit_record_9644",
+          "system_id": "security_service",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_02",
+          "resource_id": "support_1034",
+          "system_id": "support_platform",
+          "observed_at": "2026-09-17T12:00:00Z",
+          "captured_at": "2026-09-17T12:00:00Z",
+          "reason": "manifest_capture_after_audit_at"
+        }
+      ],
+      "matched_activity_candidates": [
+        {
+          "activity_id": "activity_4005",
+          "resource_id": "support_1034",
+          "system_id": "support_platform",
+          "event_time": "2026-05-24T07:07:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_claim_without_item_level_evidence"
+        }
+      ],
+      "exclusion_reasons": {
+        "manifest_capture_after_audit_at": 2
+      }
+    },
+    {
+      "case_id": "case_55",
+      "resolved_user_id": "user_16",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [
+        {
+          "file_id": "evidence_01",
+          "resource_id": "audit_record_2857",
+          "system_id": "security_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "account_9494",
+          "system_id": "account_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "search_4882",
+          "system_id": "search_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_01",
+          "resource_id": "backup_9287",
+          "system_id": "backup_service",
+          "observed_at": "2026-09-15T11:59:39Z",
+          "captured_at": "2026-09-15T11:59:39Z",
+          "reason": "manifest_capture_after_audit_at"
+        }
+      ],
+      "matched_activity_candidates": [
+        {
+          "activity_id": "activity_4006",
+          "resource_id": "backup_9287",
+          "system_id": "backup_service",
+          "event_time": "2026-04-29T09:07:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_claim_without_item_level_evidence"
+        }
+      ],
+      "exclusion_reasons": {
+        "manifest_capture_after_audit_at": 4
+      }
+    },
+    {
+      "case_id": "case_61",
+      "resolved_user_id": "user_07",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [
+        {
+          "file_id": "evidence_58",
+          "resource_id": "support_001",
+          "system_id": "support_platform",
+          "observed_at": "2026-09-12T07:30:00Z",
+          "captured_at": "2026-09-12T07:30:00Z",
+          "reason": "manifest_capture_after_audit_at"
+        },
+        {
+          "file_id": "evidence_58",
+          "resource_id": "support_001",
+          "system_id": "support_platform",
+          "observed_at": "2026-09-12T07:30:00Z",
+          "captured_at": "2026-09-12T07:30:00Z",
+          "reason": "manifest_capture_after_audit_at"
+        }
+      ],
+      "matched_activity_candidates": [
+        {
+          "activity_id": "activity_4007",
+          "resource_id": "object_19",
+          "system_id": "object_storage",
+          "event_time": "2026-02-13T08:07:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_claim_without_item_level_evidence"
+        }
+      ],
+      "exclusion_reasons": {
+        "manifest_capture_after_audit_at": 2
+      }
+    },
+    {
+      "case_id": "case_63",
+      "resolved_user_id": "user_09",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [
+        {
+          "activity_id": "activity_4008",
+          "resource_id": "marketing_001",
+          "system_id": "marketing_platform",
+          "event_time": "2026-09-16T07:27:01Z",
+          "event_type": "LINK_RESOURCE_IDENTITY",
+          "reason": "activity_claim_without_item_level_evidence"
+        }
+      ],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_263",
+      "resolved_user_id": "user_261",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_264",
+      "resolved_user_id": "user_262",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 2,
+        "phone_alias_count": 1,
+        "email_hash_count": 2,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_265",
+      "resolved_user_id": "user_263",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_266",
+      "resolved_user_id": "user_264",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_267",
+      "resolved_user_id": "user_265",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 2,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_268",
+      "resolved_user_id": "user_266",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_269",
+      "resolved_user_id": "user_267",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_270",
+      "resolved_user_id": "user_268",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_271",
+      "resolved_user_id": "user_269",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_272",
+      "resolved_user_id": "user_270",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 2,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_368",
+      "resolved_user_id": "user_366",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 2,
+        "phone_alias_count": 1,
+        "email_hash_count": 2,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_416",
+      "resolved_user_id": "user_414",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_417",
+      "resolved_user_id": "user_415",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 2,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_517",
+      "resolved_user_id": "user_515",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 2,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_519",
+      "resolved_user_id": "user_517",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    },
+    {
+      "case_id": "case_521",
+      "resolved_user_id": "user_519",
+      "diagnosis": "NO_LINKED_RESOURCE_AT_AUDIT_CUTOFF",
+      "identifiers_considered": {
+        "email_alias_count": 1,
+        "phone_alias_count": 1,
+        "email_hash_count": 1,
+        "name_alias_count": 1
+      },
+      "evidence_files_searched": {
+        ".log": 26,
+        ".json": 28,
+        ".txt": 1,
+        ".png": 11,
+        ".sql": 24,
+        ".pdf": 4
+      },
+      "evidence_items_loaded": 2550,
+      "matched_evidence_candidates": [],
+      "matched_activity_candidates": [],
+      "exclusion_reasons": [
+        "no evidence item matched a time-valid identity identifier; explicit lineage traversal had no linked starting resource"
+      ]
+    }
+  ]
+}

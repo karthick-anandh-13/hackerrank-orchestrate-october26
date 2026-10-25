@@ -1,0 +1,30 @@
+{
+  "generation_command": "python3 -m code.main",
+  "validation_command": "python3 -m code.validate_output",
+  "tests_command": "python3 -m unittest discover -s tests -v",
+  "public_evaluation_command": "python3 -m code.evaluation.main",
+  "report_refresh_command": "python3 -m code.evaluation.refresh_reports",
+  "request_rows": 518,
+  "output_rows": 518,
+  "output_sha256": "3e4b0b94e59148242e3c76a26bc546ef092cabe25322eb02f909969fd03e2e61",
+  "status_distribution": {
+    "INCOMPLETE": 414,
+    "COMPLETE": 94,
+    "NOT_APPLICABLE": 10
+  },
+  "tests_passed": 41,
+  "tests_failed": 0,
+  "output_validator": "passed before report refresh",
+  "public_sample": {
+    "status_matches": 28,
+    "cases": 32,
+    "exact_step_sequence_matches": 1,
+    "exact_combined_matches": 1
+  },
+  "evidence_manifest_files": 94,
+  "parsed_evidence_items": 2550,
+  "activity_rows": 4011,
+  "unresolved_obligation_records": 833,
+  "risk_graph_cases": 508,
+  "usage_model_provider_calls": 0
+}
